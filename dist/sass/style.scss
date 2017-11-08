@@ -1,11 +1,10 @@
 @import "custom";
 @import "default-class";
-@import "layout";
 
 //Main styles
 main {
   margin: 25px 0 0 0;
-  .wrapper {
+  .wrapp {
     margin: 0 20px;
     .portfolio {
       padding-left: 130px;
@@ -39,11 +38,11 @@ main {
           top: -8px;
           max-width: 120px;
           max-height: 122px;
-          img{
+          img {
             border-radius: 50%;
           }
         }
-     }
+      }
       .services {
         margin-top: 12px;
         h6 {
@@ -90,7 +89,7 @@ main {
                     left: -2px;
                     top: 0;
                   }
-                  &.firstRow:before{
+                  &.firstRow:before {
                     background-color: $grenBg;
                     width: 86%;
                   }
@@ -142,7 +141,7 @@ main {
           + span {
             margin-left: 15px;
           }
-          &:before{
+          &:before {
             content: ' ';
             background: url("../../app/img/sprite.png");
             display: inline-block;
@@ -185,16 +184,16 @@ main {
             font-weight: 400;
             margin-left: 3px;
           }
-          .text-message{
+          .text-message {
             margin-top: 11px;
             border: 1px solid #cfcfcf;
             background: $commentBg;
             padding: 14px 17px 12px 18px;
             position: relative;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
-            line-height:18px;
+            line-height: 18px;
             font-size: 14px;
-            p{
+            p {
               color: $standartFont;
               font-weight: 400;
             }
@@ -212,20 +211,20 @@ main {
               left: 23px;
             }
           }
-          +.message{
+          + .message {
             margin-top: 18px;
           }
         }
       }
     }
   }
-  .your-comment{
+  .your-comment {
     margin-top: 25px;
     padding: 29px 0 34px 0;
     background: $formBg;
-    form{
+    form {
       position: relative;
-      .textarea{
+      .textarea {
         display: block;
         border-radius: 2px;
         border: 1px solid #a9a9a9;
@@ -236,20 +235,20 @@ main {
         box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.44);
         width: 100%;
         min-height: 65px;
-        &.error-border{
+        &.error-border {
           border: 1px solid red;
         }
       }
-      .error{
+      .error {
         display: none;
         color: red;
         position: absolute;
-        &.show{
+        &.show {
           display: inline-block;
         }
 
       }
-      button{
+      button {
         margin: 0 auto;
         display: block;
         margin-top: 23px;
@@ -264,10 +263,11 @@ main {
         font-family: 'PT Sans', sans-serif;
         color: $standartFont;
         font-size: 16px;
-        outline:none;
+        outline: none;
         cursor: pointer;
       }
     }
   }
 }
 
+@import "layout";
